@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="co.edu.uptc.sw2_library" transaction-type="JTA">
+    <jta-data-source>jdbc/library</jta-data-source>
+    <class>co.edu.uptc.sw2.libreria.persistencia.entities.Autor</class>
+    <class>co.edu.uptc.sw2.libreria.persistencia.entities.Ciudad</class>
+    <class>co.edu.uptc.sw2.libreria.persistencia.entities.Cliente</class>
+    <class>co.edu.uptc.sw2.libreria.persistencia.entities.Libro</class>
+    <class>co.edu.uptc.sw2.libreria.persistencia.entities.Prestamo</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
