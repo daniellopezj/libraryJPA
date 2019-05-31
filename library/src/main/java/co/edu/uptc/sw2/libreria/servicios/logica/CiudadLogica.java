@@ -12,7 +12,15 @@ public class CiudadLogica {
     @EJB
     private CiudadDao dao;
     
-    public List<Ciudad> obtenerCiudadLogica(){
-     return dao.getCiudadDao();
+    public List<Ciudad> obtenerCiudadLogica() {
+        return dao.getCiudadDao();
     }
+    
+    public List<String> deleteCiudadLogica(int id) {
+        return dao.deleteCiudadDao(id);
+    }
+    
+    public List<String> addCiudadLogica(Ciudad c){
+    return dao.postCiudadDao(c);
+        }
 }

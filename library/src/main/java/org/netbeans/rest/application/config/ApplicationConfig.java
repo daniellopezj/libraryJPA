@@ -35,6 +35,7 @@ public class ApplicationConfig extends Application {
         resources.add(co.edu.uptc.sw2.libreria.servicios.CorsFilter.class);
         resources.add(co.edu.uptc.sw2.libreria.servicios.LibroServicio.class);
         resources.add(co.edu.uptc.sw2.libreria.servicios.PrestamoServicio.class);
+        resources.add(co.edu.uptc.sw2.libreria.servicios.PrinServices.class);
     }
     
 }
