@@ -15,4 +15,16 @@ public class AutorLogica {
     public List<Autor> obtenerAutorLogica(){
      return dao.getAutorDao();
     }
+    
+     public List<String> deleteAutorLogica(int id) {
+        return dao.deleteAutorDao(id);
+    }
+
+    public List<String> addAutorLogica(Autor c) {
+        return dao.postAutorDao(c);
+    }
+    
+     public List<String> updateCiudadLogica(Autor c) {
+        return dao.PutAutorDao(c);
+    }
 }

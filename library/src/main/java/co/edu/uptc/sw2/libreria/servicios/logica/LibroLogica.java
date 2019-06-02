@@ -15,4 +15,16 @@ public class LibroLogica {
     public List<Libro> obtenerlibrologica() {
         return dao.getLibroDao();
     }
+
+    public List<String> deleteLibroLogica(int id) {
+        return dao.deleteLibroDao(id);
+    }
+
+    public List<String> addLibroLogica(Libro c) {
+        return dao.postLibroDao(c);
+    }
+
+    public List<String> updateLibroLogica(Libro c) {
+        return dao.PutLibroDao(c);
+    }
 }

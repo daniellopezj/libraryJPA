@@ -25,9 +25,16 @@ public class CiudadDao {
         l.add("OK");
         return l;
     }
-    
-    public List<String> postCiudadDao(Ciudad  c) {
+
+    public List<String> postCiudadDao(Ciudad c) {
         em.persist(c);
+        List l = new ArrayList();
+        l.add("OK");
+        return l;
+    }
+
+    public List<String> PutCiudadDao(Ciudad c) {
+        em.merge(c);
         List l = new ArrayList();
         l.add("OK");
         return l;

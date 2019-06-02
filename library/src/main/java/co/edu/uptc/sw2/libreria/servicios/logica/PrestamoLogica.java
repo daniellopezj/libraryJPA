@@ -15,4 +15,17 @@ public class PrestamoLogica {
     public List<Prestamo> obtenerPrestamoLogica() {
         return dao.getPrestamoDao();
     }
+    
+    
+    public List<String> deletePrestamoLogica(int id) {
+        return dao.deletePrestamoDao(id);
+    }
+
+    public List<String> addPrestamoLogica(Prestamo c) {
+        return dao.postPrestamoDao(c);
+    }
+
+    public List<String> updatePrestamoLogica(Prestamo c) {
+        return dao.PutPrestamoDao(c);
+    }
 }

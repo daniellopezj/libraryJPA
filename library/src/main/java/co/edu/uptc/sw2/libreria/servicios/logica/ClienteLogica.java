@@ -15,4 +15,16 @@ public class ClienteLogica {
     public List<Cliente> obtenerClienteLogica(){
      return dao.getClienteDao();
     }
+    
+     public List<String> deleteClienteLogica(int id) {
+        return dao.deleteClienteDao(id);
+    }
+
+    public List<String> addClienteLogica(Cliente c) {
+        return dao.postClienteDao(c);
+    }
+    
+     public List<String> updateCiudadLogica(Cliente c) {
+        return dao.PutClienteDao(c);
+    }
 }
